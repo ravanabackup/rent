@@ -489,7 +489,7 @@
                     <label class="form-label">Electricity Rate</label>
                     <div class="input-wrapper">
                         <span class="input-prefix">₹</span>
-                        <input type="number" id="electricityRate" class="form-input input-with-prefix" value="7" disabled>
+                        <input type="number" id="electricityRate" class="form-input input-with-prefix" value="8" disabled>
                     </div>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         let currentRentAmount = 10000;
         let currentMode = 'auto';
         const waterTax = 200;
-        const electricityRate = 7;
+        const electricityRate = 8;
 
         // Theme management
         function toggleTheme() {
@@ -654,7 +654,7 @@
             const finalUnit = parseInt(document.getElementById('finalUnit').value) || 0;
             const rentAmount = parseInt(document.getElementById('rentAmount').value) || 0;
             const waterTaxAmount = parseInt(document.getElementById('waterTax').value) || 0;
-            const electricityRateAmount = parseInt(document.getElementById('electricityRate').value) || 7;
+            const electricityRateAmount = parseInt(document.getElementById('electricityRate').value) || 8;
 
             if (rentAmount === 0 || finalUnit === 0 || initialUnit === 0) {
                 const resultDiv = document.getElementById('result');
@@ -721,7 +721,7 @@
             if (currentMode === 'manual') {
                 document.getElementById('rentAmount').value = 10000;
                 document.getElementById('waterTax').value = 200;
-                document.getElementById('electricityRate').value = 7;
+                document.getElementById('electricityRate').value = 8;
             }
         }
 
